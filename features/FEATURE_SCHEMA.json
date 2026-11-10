@@ -1,0 +1,56 @@
+{
+  "version": "1.0.0",
+  "feature_columns": [
+    "bytes",
+    "bytes_clean",
+    "hour",
+    "day_of_week",
+    "is_weekend",
+    "month",
+    "day_of_month",
+    "src_ip_freq",
+    "dst_ip_freq",
+    "port_freq",
+    "protocol_freq",
+    "bytes_clean_mean_5min",
+    "bytes_clean_std_5min",
+    "bytes_clean_min_5min",
+    "bytes_clean_max_5min",
+    "bytes_clean_count_5min",
+    "bytes_clean_median_5min",
+    "bytes_clean_mean_1H",
+    "bytes_clean_std_1H",
+    "bytes_clean_min_1H",
+    "bytes_clean_max_1H",
+    "bytes_clean_count_1H",
+    "bytes_clean_median_1H",
+    "bytes_clean_mean_24H",
+    "bytes_clean_std_24H",
+    "bytes_clean_min_24H",
+    "bytes_clean_max_24H",
+    "bytes_clean_count_24H",
+    "bytes_clean_median_24H",
+    "time_since_last_conn",
+    "conn_count_cum",
+    "unique_ports_cum",
+    "unique_dst_cum",
+    "port_entropy_1H",
+    "protocol_encoded",
+    "status_clean_encoded"
+  ],
+  "categorical_features": [
+    "protocol",
+    "status_clean"
+  ],
+  "target_column": "target",
+  "target_mapping": {
+    "benign": 0,
+    "malicious": 1
+  },
+  "anomaly_types": [
+    "port_scan",
+    "ddos",
+    "brute_force",
+    "data_exfil"
+  ]
+}
